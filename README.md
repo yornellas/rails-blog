@@ -16,13 +16,15 @@ Projeto criado segundo o passo a passo do Ruby on Rails Guides (https://guides.r
 ### Clone em sua máquina
 
 ```shell
-git clone git@github.com:yornellas/rails-blog.git```
+git clone git@github.com:yornellas/rails-blog.git
+```
 
 ### Instale as dependências
 ```shell
 cd blog2
 bundle install
 ```
+
 ### Configure o Banco de Dados
 Copie o arquivo *config/database.exemple.yml* e cole na mesma pasta, renomeando para *database.yml*
 e configure seu bando de dados.
