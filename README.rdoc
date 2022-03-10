@@ -1,28 +1,38 @@
-== README
+# Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Projeto criado segundo o passo a passo do Ruby on Rails Guides (https://guides.rubyonrails.org/getting_started.html)
 
-Things you may want to cover:
+## Requisitos Necessários:
+* Ruby 2.3.0 ou Superior
+* SQLite3
+* Rails 4.2.8
 
-* Ruby version
+## Funcionalidades
 
-* System dependencies
+- CRUD de artigos para o blog
+- CRUD de comentários vinculados aos artigos
 
-* Configuration
+## Para executar o projeto:
+### Clone em sua máquina
 
-* Database creation
+```shell
+git clone git@github.com:yornellas/rails-blog.git```
 
-* Database initialization
+### Instale as dependências
+```shell
+cd blog2
+bundle install
+```
+### Configure o Banco de Dados
+Copie o arquivo *config/database.exemple.yml* e cole na mesma pasta, renomeando para *database.yml*
+e configure seu bando de dados.
+Realize a criação do banco e execute as migrações
+```shell
+rake db:create
+rake db:migrate
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+### Execute a aplicação
+```shell
+rails server
+```
